@@ -1,0 +1,30 @@
+.header {
+    overflow-y: auto;
+    word-wrap: break-word;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.863);
+    position:relative;
+    top:20px;
+    font-size: 70px;
+    font-weight: 2px;
+	letter-spacing: -5px;
+
+    background-image: linear-gradient(5deg, #1100ff, #df5eff, #1100ff, #df5eff,#1100ff, #df5eff, #1100ff, #df5eff,#1100ff );
+    background-size: 1000% 100%;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent; 
+
+    animation: gradient 10s infinite linear;
+
+    text-shadow:
+    0 0 20px rgb(54, 56, 219);    
+}
+
+
+@keyframes gradient {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 0%}
+}
+
