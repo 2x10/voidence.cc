@@ -23,7 +23,8 @@ a
     text-decoration: none;
 }   
 
-@-webkit-keyframes snowflakes-fall {
+@-webkit-keyframes snowflakes-fall 
+{
     0% {
         top:-10%
     } 100% {
@@ -31,7 +32,8 @@ a
     }
 }
 
-@-webkit-keyframes snowflakes-shake { 
+@-webkit-keyframes snowflakes-shake 
+{ 
     0% { 
         -webkit-transform:translateX(0px);
         transform:translateX(0px)
@@ -44,14 +46,16 @@ a
     }
 }
 
-@keyframes snowflakes-fall { 
+@keyframes snowflakes-fall 
+{ 
     0% { 
         top:-10%
     } 100% {
         top:100%
     }
 }
-@keyframes snowflakes-shake { 
+@keyframes snowflakes-shake 
+{ 
     0% {
         transform:translateX(0px)
     } 50% {

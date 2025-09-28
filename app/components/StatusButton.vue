@@ -18,11 +18,17 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @use "~/assets/css/variables.scss" as *;
+
+    body 
+    {
+        color: $gray
+    }
 
     .status-button 
     {
+        margin-bottom: 40px;
         z-index: 1;
         display: flex;
         border: 1px solid $gray;
@@ -53,7 +59,7 @@
     .vert-line 
     {
         width: 1px;
-        background-color: #ffffff42;
+        background-color: $gray;
         height: 100%;
     }
 

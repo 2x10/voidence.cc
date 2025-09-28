@@ -50,13 +50,36 @@ const buttons =
                 v-bind="button"
             />
         </div>
+        <img class="pfp" src="/image/2x10.png">
+        <div class="line"></div> 
+        <Footer />
     </div>
 </template>
 
-<style lang="scss" scooped>
+<style lang="scss">
 @use "~/assets/css/variables.scss" as *;
 
+.content
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.pfp 
+{
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 6rem;
+    height: auto;
+    border: 1px solid #FFF;
+}
+
 .header {
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
     z-index: 1;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.863);
@@ -86,18 +109,13 @@ const buttons =
 
 .line
 {
-    margin: 0 0 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
     height:1px;
     width:100%;
 
     background-color: $gray;
-}
-
-.content
-{
-    display: grid;
-    justify-content: center;
-    text-align: center
 }
 
 .buttons
