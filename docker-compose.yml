@@ -1,0 +1,11 @@
+services:
+    app:
+        image: 2x10/voidence
+        container_name: 2x10.voidence
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        env_file: .env
+        restart: unless-stopped  
+        ports:
+            - "127.0.0.1:${PORT}:${PORT}"
