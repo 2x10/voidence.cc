@@ -48,7 +48,7 @@
         padding: 0 15px;
         color: #fff;
         text-decoration: none;
-        transition: background-color 0.3s ease;
+        transition: $button-animation;
     }
 
     .status-button a.half:hover 
